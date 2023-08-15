@@ -61,7 +61,7 @@ const setDirectors = catchError(async(req, res) => {
     const movie = await Movie.findByPk(id)
     if(!movie) return res.sendStatus(404)
     await movie.setDirectors(req.body)
-    const directors = await movie.getDiectors()
+    const directors = await movie.getDirectors()
     return res.json(directors)
 });
 

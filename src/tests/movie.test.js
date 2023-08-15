@@ -82,7 +82,7 @@ test("POST -> 'URL_MOVIES/:id/actors', should return status code 200 and res.bod
     await createActor.destroy()
 })
 
-test("POST -> 'URL_MOVIES/:id/directors', should return status code 200 and res.body.toHaveLength === 1", async () => {
+test("POSt -> 'URL_MOVIES/:id/directors', should return status code 200 and res.body.toHaveLength === 1", async () => {
     const director = {
         firstName: "Akira",
         lastName: "Kurosawa",
